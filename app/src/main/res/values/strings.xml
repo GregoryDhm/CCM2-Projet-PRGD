@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ProjetM2 PRGD</string>
+    <string name="app_name" translatable="false">ProjetM2 PRGD</string>
+    <string name="Countries">Countries</string>
+    <string name="login">Login</string>
 </resources>
