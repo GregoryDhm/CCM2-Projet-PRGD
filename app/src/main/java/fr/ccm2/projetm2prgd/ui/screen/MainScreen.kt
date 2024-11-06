@@ -41,7 +41,6 @@ fun MainScreen (
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Ajout de texte avec un style plus travaillé
             Text(
                 text = "Grégory Dehame",
                 style = MaterialTheme.typography.bodyLarge.copy(
@@ -59,9 +58,8 @@ fun MainScreen (
                 color = MaterialTheme.colorScheme.primary
             )
 
-            Spacer(modifier = Modifier.size(24.dp)) // Ajout d'un espacement entre les éléments
+            Spacer(modifier = Modifier.size(24.dp))
 
-            // Premier bouton stylisé
             Button(
                 onClick = { onButtonLoginClick() },
                 modifier = Modifier
@@ -78,7 +76,6 @@ fun MainScreen (
                 )
             }
 
-            // Deuxième bouton stylisé
             Button(
                 onClick = { onButtonCountriesClick() },
                 modifier = Modifier
