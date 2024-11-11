@@ -16,3 +16,10 @@ data class CreditCardDto(
     @SerializedName("credit_card_type")
     val creditCardType: String
 )
+fun CreditCardDto.toRoom(): CreditCardEntity {
+    return CreditCardEntity(
+        creditCardNumber = creditCardNumber,
+        creditCardExpiryDate = creditCardExpiryDate,
+        creditCardType = creditCardType
+    )
+}

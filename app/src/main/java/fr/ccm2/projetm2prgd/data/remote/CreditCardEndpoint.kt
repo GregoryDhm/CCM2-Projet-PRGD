@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface CreditCardEndpoint {
     @GET("credit_cards")
-    suspend fun getFakePerson() : CreditCardDto
+    suspend fun getRandomCreditCard() : CreditCardDto
 }

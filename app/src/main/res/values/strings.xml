@@ -2,4 +2,7 @@
     <string name="app_name" translatable="false">ProjetM2 PRGD</string>
     <string name="Countries">Countries</string>
     <string name="login">Login</string>
+    <string name="creditCardScreen">Credit Cards</string>
+    <string name="addCreditCard">Add credit card</string>
+    <string name="removeAllCreditCards">Remove all credit cards</string>
 </resources>

@@ -2,4 +2,7 @@
 <resources>
     <string name="Countries">Pays</string>
     <string name="login">Connexion</string>
+    <string name="creditCardScreen">Cartes de crédits</string>
+    <string name="addCreditCard">Ajouter une carte de crédit</string>
+    <string name="removeAllCreditCards">Supprimer toutes les cartes de crédits</string>
 </resources>

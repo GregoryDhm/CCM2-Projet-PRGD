@@ -88,7 +88,7 @@ fun MainScreen (
                 contentPadding = PaddingValues(12.dp)
             ) {
                 Text(
-                    text = LocalContext.current.getString(R.string.Countries),
+                    text = LocalContext.current.getString(R.string.creditCardScreen),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Medium,
                     color = Color.White
