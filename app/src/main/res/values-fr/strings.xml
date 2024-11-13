@@ -5,4 +5,6 @@
     <string name="creditCardScreen">Cartes de crédits</string>
     <string name="addCreditCard">Ajouter une carte de crédit</string>
     <string name="removeAllCreditCards">Supprimer toutes les cartes de crédits</string>
+    <string name="register">S\'enregister</string>
+    <string name="logout">Se déconnecter</string>
 </resources>

@@ -5,4 +5,6 @@
     <string name="creditCardScreen">Credit Cards</string>
     <string name="addCreditCard">Add credit card</string>
     <string name="removeAllCreditCards">Remove all credit cards</string>
+    <string name="register">Register</string>
+    <string name="logout">Log out</string>
 </resources>

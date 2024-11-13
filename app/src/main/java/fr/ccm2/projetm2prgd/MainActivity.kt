@@ -18,7 +18,7 @@ import fr.ccm2.projetm2prgd.ui.theme.ProjetM2PRGDTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
+
         setContent {
             ProjetM2PRGDTheme {
                 val navController = rememberNavController()
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     Column {
                         HomeNavHost(
                             navController = navController
-                        ) // Will be red for the beginning
+                        )
                         Greeting(
                             name = "Android",
                             modifier = Modifier.padding(innerPadding)

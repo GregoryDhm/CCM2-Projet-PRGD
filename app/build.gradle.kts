@@ -77,4 +77,5 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
+    implementation("androidx.compose.runtime:runtime-livedata:1.0.0")
 }

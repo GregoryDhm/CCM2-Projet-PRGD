@@ -7,14 +7,9 @@ import fr.ccm2.projetm2prgd.firebase.repository.FirebaseAuthRepository
 
 class FirebaseAuthViewModel : ViewModel() {
 
-    private val mFirebaseAuthRepository: FirebaseAuthRepository by lazy { FirebaseAuthRepository() }
-    var mCurrentUser = MutableLiveData<FirebaseUser>()
-    var mErrorProcess = MutableLiveData<Int>()
-
-    init {
-        mCurrentUser = mFirebaseAuthRepository.mCurrentUser
-        mErrorProcess = mFirebaseAuthRepository.mErrorProcess
-    }
+    private val mFirebaseAuthRepository = FirebaseAuthRepository()
+    val mCurrentUser = mFirebaseAuthRepository.mCurrentUser
+    val mErrorProcess = mFirebaseAuthRepository.mErrorProcess
 
     fun loginUser(email: String, password: String) {
         mFirebaseAuthRepository.loginUser(email, password)
@@ -28,3 +23,4 @@ class FirebaseAuthViewModel : ViewModel() {
         mFirebaseAuthRepository.disconnectUser()
     }
 }
+
