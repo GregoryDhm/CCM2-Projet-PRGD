@@ -118,12 +118,12 @@ fun CountriesScreen(
                                 horizontalAlignment = Alignment.Start
                             ) {
                                 Text(
-                                    text = "Circuit: ${item.number}",
+                                    text = "${context.getString(R.string.cardNumber)}: ${item.number}",
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurface
                                 )
                                 Text(
-                                    text = "Number de tours: ${item.expiryDate}",
+                                    text = "date d'expiration: ${item.expiryDate}",
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurface
                                 )
@@ -140,7 +140,7 @@ fun CountriesScreen(
                                     horizontalAlignment = Alignment.CenterHorizontally
                                 ) {
                                     Text(
-                                        text = "Total de cartes : ${item.footer}",
+                                        text = "${context.getString(R.string.totalCards)} : ${item.footer}",
                                         style = MaterialTheme.typography.bodyLarge,
                                         color = MaterialTheme.colorScheme.primary
                                     )
@@ -156,7 +156,7 @@ fun CountriesScreen(
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 Text(
-                                    text = "Total de cartes générées : ${item.footerTotal}",
+                                    text = "${context.getString(R.string.totalCardsGenerated)} : ${item.footerTotal}",
                                     style = MaterialTheme.typography.displaySmall,
                                     color = MaterialTheme.colorScheme.primary
                                 )

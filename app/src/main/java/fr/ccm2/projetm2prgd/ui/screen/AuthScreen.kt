@@ -38,17 +38,16 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import fr.ccm2.projetm2prgd.firebase.viewmodel.FirebaseAuthViewModel
+import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.setValue
 import fr.ccm2.projetm2prgd.R
-import fr.ccm2.projetm2prgd.ui.navigation.NavigationPath
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FirebaseAuthScreen(
     navController: NavController,
-    viewModel: FirebaseAuthViewModel
+    viewModel: AuthViewModel
 ) {
     val emailState = remember { mutableStateOf("") }
     val passwordState = remember { mutableStateOf("") }
@@ -203,7 +202,7 @@ fun FirebaseAuthScreen(
                             }else{
                                 Toast.makeText(
                                     context,
-                                    "Le mot de passe doit être identique",
+                                    context.getString(R.string.passwordMustBeIdentical),
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }

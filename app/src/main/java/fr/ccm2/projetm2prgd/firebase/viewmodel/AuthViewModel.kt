@@ -4,11 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseUser
 import fr.ccm2.projetm2prgd.firebase.repository.FirebaseAuthRepository
 
-class FirebaseAuthViewModel : ViewModel() {
+class AuthViewModel : ViewModel() {
 
     private val mFirebaseAuthRepository = FirebaseAuthRepository()
     //val mCurrentUser = mFirebaseAuthRepository.mCurrentUser

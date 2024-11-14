@@ -9,12 +9,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.google.firebase.auth.FirebaseUser
-import fr.ccm2.projetm2prgd.firebase.viewmodel.FirebaseAuthViewModel
+import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
 import fr.ccm2.projetm2prgd.ui.screen.CountriesScreen
 import fr.ccm2.projetm2prgd.ui.screen.FirebaseAuthScreen
 import fr.ccm2.projetm2prgd.ui.screen.MainScreen
-import fr.ccm2.projetm2prgd.ui.screen.UserScreen
 
 object NavigationPath {
     const val MAIN_SCREEN = "main_screen"
@@ -26,7 +24,7 @@ fun NavGraphBuilder.addMainScreenNav(
     onButtonLoginClick: () -> Unit,
     onButtonCountriesClick: () -> Unit,
     onLogoutClick: () -> Unit,
-    firebaseAuthViewModel : FirebaseAuthViewModel
+    firebaseAuthViewModel : AuthViewModel
 ) {
     composable(
         route = fr.ccm2.projetm2prgd.ui.navigation.NavigationPath.MAIN_SCREEN
@@ -44,7 +42,7 @@ fun NavGraphBuilder.addFirebaseAuthScreenNavigation(navController: NavController
     composable(
         route = fr.ccm2.projetm2prgd.ui.navigation.NavigationPath.FIREBASE_AUTH_SCREEN,
     ) {
-        FirebaseAuthScreen(navController, FirebaseAuthViewModel())
+        FirebaseAuthScreen(navController, AuthViewModel())
     }
 }
 fun NavGraphBuilder.addCountriesScreen(navController: NavController) {
@@ -58,7 +56,7 @@ fun NavGraphBuilder.addCountriesScreen(navController: NavController) {
 @Composable
 fun HomeNavHost(
     navController: NavHostController = rememberNavController(),
-    firebaseAuthViewModel: FirebaseAuthViewModel,
+    firebaseAuthViewModel: AuthViewModel,
 ) {
     val currentUser by firebaseAuthViewModel.mCurrentUser.observeAsState()
     NavHost(
@@ -79,10 +77,8 @@ fun HomeNavHost(
                 }
             },
             firebaseAuthViewModel = firebaseAuthViewModel,
-            //currentUser = currentUser
         )
         addFirebaseAuthScreenNavigation(navController = navController)
         addCountriesScreen(navController = navController)
-        //addUserScreen(navController = navController, viewModel = firebaseAuthViewModel)
     }
 }

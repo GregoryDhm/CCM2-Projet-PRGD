@@ -17,4 +17,8 @@
     <string name="emailAlreadyExistsError">Error: An account with this email already exists.</string>
     <string name="passwordTooShortError">Error: Your password must be at least 6 characters long</string>
     <string name="unknownError">Unknown error. Please try again.</string>
+    <string name="passwordMustBeIdentical">The password must be identical.</string>
+    <string name="totalCardsGenerated">Total cards generated</string>
+    <string name="totalCards">Total cards</string>
+    <string name="cardNumber">Card number</string>
 </resources>

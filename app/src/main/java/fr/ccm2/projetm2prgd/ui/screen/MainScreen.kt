@@ -1,6 +1,5 @@
 package fr.ccm2.projetm2prgd.ui.screen
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,7 +14,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
@@ -23,16 +21,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.google.firebase.auth.FirebaseUser
 import fr.ccm2.projetm2prgd.R
-import fr.ccm2.projetm2prgd.firebase.viewmodel.FirebaseAuthViewModel
+import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
 
 @Composable
 fun MainScreen (
-    firebaseAuthViewModel: FirebaseAuthViewModel,
+    firebaseAuthViewModel: AuthViewModel,
     onButtonLoginClick: () -> Unit,
     onButtonCountriesClick: () -> Unit,
     onLogoutClick: () -> Unit
@@ -84,7 +80,7 @@ fun MainScreen (
                 )
             }
 
-            Spacer(modifier = Modifier.size(24.dp))
+            //Spacer(modifier = Modifier.size(24.dp))
 
             if (currentUser != null) {
                 Text(

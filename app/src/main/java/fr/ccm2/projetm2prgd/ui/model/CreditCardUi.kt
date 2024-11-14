@@ -12,9 +12,11 @@ sealed interface CreditCardUi {
     data class Header(
         val title: String,
     ) : CreditCardUi
+
     data class Footer(
         val footer: Int,
     ) : CreditCardUi
+
     data class FooterTotal(
         val footerTotal: Int,
     ) : CreditCardUi

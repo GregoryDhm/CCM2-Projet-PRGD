@@ -17,4 +17,8 @@
     <string name="emailAlreadyExistsError">Erreur : Un compte avec cet email existe déjà.</string>
     <string name="passwordTooShortError">Erreur: Votre mot de passe doit contenir au moins 6 caractères</string>
     <string name="unknownError">Erreur inconnue. Veuillez réessayer.</string>
+    <string name="passwordMustBeIdentical">Le mot de passe doit être identique.</string>
+    <string name="totalCardsGenerated">Total de cartes générées</string>
+    <string name="totalCards">"Total de cartes "</string>
+    <string name="cardNumber">Numéro de carte</string>
 </resources>
