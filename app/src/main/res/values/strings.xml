@@ -7,4 +7,14 @@
     <string name="removeAllCreditCards">Remove all credit cards</string>
     <string name="register">Register</string>
     <string name="logout">Log out</string>
+    <string name="loginScreen">Login screen</string>
+    <string name="password">Password</string>
+    <string name="fillAllFields">Please fill in all fields</string>
+    <string name="errorIncorrectEmailPassword">Error: Incorrect email or password.</string>
+    <string name="errorEmailAlreadyExists">Error: An account with this email already exists.</string>
+    <string name="noAccountPrompt">Don\'t have an account?</string>
+    <string name="accountCreatedMessage">Your account has been successfully created!</string>
+    <string name="emailAlreadyExistsError">Error: An account with this email already exists.</string>
+    <string name="passwordTooShortError">Error: Your password must be at least 6 characters long</string>
+    <string name="unknownError">Unknown error. Please try again.</string>
 </resources>

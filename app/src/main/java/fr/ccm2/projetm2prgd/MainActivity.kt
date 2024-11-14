@@ -9,9 +9,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
+import fr.ccm2.projetm2prgd.firebase.viewmodel.FirebaseAuthViewModel
 import fr.ccm2.projetm2prgd.ui.navigation.HomeNavHost
 import fr.ccm2.projetm2prgd.ui.theme.ProjetM2PRGDTheme
 
@@ -22,10 +26,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             ProjetM2PRGDTheme {
                 val navController = rememberNavController()
+                val firebaseAuthViewModel: FirebaseAuthViewModel = viewModel()
+                val currentUser by firebaseAuthViewModel.mCurrentUser.observeAsState()
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column {
                         HomeNavHost(
-                            navController = navController
+                            navController = navController,
+                            firebaseAuthViewModel = firebaseAuthViewModel,
                         )
                         Greeting(
                             name = "Android",

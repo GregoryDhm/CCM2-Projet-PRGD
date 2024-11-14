@@ -7,4 +7,14 @@
     <string name="removeAllCreditCards">Supprimer toutes les cartes de crédits</string>
     <string name="register">S\'enregister</string>
     <string name="logout">Se déconnecter</string>
+    <string name="loginScreen">Page de connexion</string>
+    <string name="password">Mot de passe</string>
+    <string name="fillAllFields">Veuillez remplir tous les champs</string>
+    <string name="errorIncorrectEmailPassword">Erreur : Email ou mot de passe incorrect.</string>
+    <string name="errorEmailAlreadyExists">Erreur : Un compte avec cet email existe déjà.</string>
+    <string name="noAccountPrompt">Vous n\'avez pas de compte ?</string>
+    <string name="accountCreatedMessage">Votre compte a bien été créé !</string>
+    <string name="emailAlreadyExistsError">Erreur : Un compte avec cet email existe déjà.</string>
+    <string name="passwordTooShortError">Erreur: Votre mot de passe doit contenir au moins 6 caractères</string>
+    <string name="unknownError">Erreur inconnue. Veuillez réessayer.</string>
 </resources>

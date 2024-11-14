@@ -13,7 +13,10 @@ data class CreditCardEntity(
     val creditCardExpiryDate: String,
 
     @ColumnInfo(name = "credit_card_type")
-    val creditCardType: String
+    val creditCardType: String,
+
+    @ColumnInfo(name = "timestamp")
+    val timestamp: Long = System.currentTimeMillis()
 ){
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0
