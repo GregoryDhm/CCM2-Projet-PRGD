@@ -1,11 +1,11 @@
-package fr.ccm2.projetm2prgd.firebase.viewmodel
+package fr.ccm2.projetm2prgd.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import fr.ccm2.projetm2prgd.firebase.repository.FirebaseAuthRepository
+import fr.ccm2.projetm2prgd.data.repository.FirebaseAuthRepository
 
 class AuthViewModel : ViewModel() {
 

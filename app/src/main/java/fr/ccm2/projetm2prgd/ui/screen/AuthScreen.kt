@@ -38,7 +38,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
+import fr.ccm2.projetm2prgd.ui.viewmodel.AuthViewModel
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.setValue
 import fr.ccm2.projetm2prgd.R

@@ -9,7 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
+import fr.ccm2.projetm2prgd.ui.viewmodel.AuthViewModel
 import fr.ccm2.projetm2prgd.ui.screen.CountriesScreen
 import fr.ccm2.projetm2prgd.ui.screen.FirebaseAuthScreen
 import fr.ccm2.projetm2prgd.ui.screen.MainScreen

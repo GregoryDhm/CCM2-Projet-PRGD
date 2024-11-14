@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
-import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
+import fr.ccm2.projetm2prgd.ui.viewmodel.AuthViewModel
 import fr.ccm2.projetm2prgd.ui.navigation.HomeNavHost
 import fr.ccm2.projetm2prgd.ui.theme.ProjetM2PRGDTheme
 

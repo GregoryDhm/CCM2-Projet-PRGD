@@ -1,4 +1,4 @@
-package fr.ccm2.projetm2prgd.firebase.data
+package fr.ccm2.projetm2prgd.data
 
 import android.annotation.SuppressLint
 import android.app.NotificationChannel

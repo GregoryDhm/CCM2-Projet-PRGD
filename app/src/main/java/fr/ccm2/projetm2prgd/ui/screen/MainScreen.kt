@@ -24,7 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import fr.ccm2.projetm2prgd.R
-import fr.ccm2.projetm2prgd.firebase.viewmodel.AuthViewModel
+import fr.ccm2.projetm2prgd.ui.viewmodel.AuthViewModel
 
 @Composable
 fun MainScreen (

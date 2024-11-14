@@ -1,4 +1,4 @@
-package fr.ccm2.projetm2prgd.firebase.repository
+package fr.ccm2.projetm2prgd.data.repository
 
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.auth.FirebaseAuth
